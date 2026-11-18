@@ -1,11 +1,11 @@
-mixed-port: 7890
-ipv6: true
-udp: true
-allow-lan: false
-bind-address: '*'
+# KTM Cloud 手机 Clash Meta 配置（照抄电脑 Clash Verge 当前生效的分流规则与策略组）
 mode: rule
+allow-lan: false
 log-level: info
+ipv6: false
 unified-delay: true
+udp: true
+tcp-concurrent: true
 experimental:
   ignore-resolve-fail: true
 hosts:
@@ -13,10 +13,8 @@ hosts:
   services.googleapis.cn: 74.125.203.94
 dns:
   enable: true
-  listen: 127.0.0.1:1053
-  ipv6: true
+  ipv6: false
   default-nameserver:
-  - 114.114.114.114
   - 223.5.5.5
   - 119.29.29.29
   enhanced-mode: fake-ip
@@ -119,7 +117,7 @@ dns:
   - +.media.dssott.com
   - +.pvp.net
   nameserver-policy:
-    ? iepl.ktmcn.net,gtm1.ktmwan.net,ahyhk.ktmhyld.com,jp1.ktmhyld.com,abus1.ktmhyld.com,wkqrk.ktmhywan.net,8vhm0.ktmhywan.net,o4ogv.ktmhywan.net
+    ? iepl.ktmcn.net,gtm1.ktmwan.net,ahyhk.ktmhyld.com,jp1.ktmhyld.com,abus1.ktmhyld.com,7o3lx.wkay.ktmhywan.net,z1k7y.nvsg.ktmhywan.net,do9n1.lesi.ktmhywan.net,wkgh3.fhk.ktmhywan.net
     : - https://api.edgequery.cc:40443/dns-query
       - https://117.147.231.222:8443/dns-query
       - https://111.31.95.15:8443/dns-query
@@ -137,9 +135,9 @@ dns:
   fallback-filter:
     geoip: false
 proxies:
-- name: 剩余流量：475.47 GB
+- name: 剩余流量：460.21 GB
   type: anytls
-  server: wantlsng.ktmlsany.top
+  server: okwanjk.ktmlsany.top
   port: 11001
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
   client-fingerprint: chrome
@@ -149,9 +147,9 @@ proxies:
   - http/1.1
   sni: www.bing.com
   skip-cert-verify: true
-- name: 距离下次重置剩余：9 天
+- name: 距离下次重置剩余：8 天
   type: anytls
-  server: wantlsng.ktmlsany.top
+  server: okwanjk.ktmlsany.top
   port: 11001
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
   client-fingerprint: chrome
@@ -163,7 +161,7 @@ proxies:
   skip-cert-verify: true
 - name: 套餐到期：2027-01-26
   type: anytls
-  server: wantlsng.ktmlsany.top
+  server: okwanjk.ktmlsany.top
   port: 11001
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
   client-fingerprint: chrome
@@ -175,7 +173,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇭🇰 HK香港-A1
   type: anytls
-  server: wantlsng.ktmlsany.top
+  server: okwanjk.ktmlsany.top
   port: 11001
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
   client-fingerprint: chrome
@@ -187,7 +185,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇭🇰 HK香港-A2
   type: anytls
-  server: wantlsng.ktmlsany.top
+  server: okwanjk.ktmlsany.top
   port: 11001
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
   client-fingerprint: chrome
@@ -199,7 +197,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇯🇵 JP日本-A1
   type: anytls
-  server: wantlsng.ktmlsany.top
+  server: okwanjk.ktmlsany.top
   port: 11002
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
   client-fingerprint: chrome
@@ -211,7 +209,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇯🇵 JP日本-A2
   type: anytls
-  server: wantlsng.ktmlsany.top
+  server: okwanjk.ktmlsany.top
   port: 11002
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
   client-fingerprint: chrome
@@ -223,7 +221,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 SG新加坡-A1
   type: anytls
-  server: wantlsng.ktmlsany.top
+  server: okwanjk.ktmlsany.top
   port: 11003
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
   client-fingerprint: chrome
@@ -235,7 +233,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 SG新加坡-A2
   type: anytls
-  server: wantlsng.ktmlsany.top
+  server: okwanjk.ktmlsany.top
   port: 11003
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
   client-fingerprint: chrome
@@ -247,7 +245,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 TW台湾-A1
   type: anytls
-  server: wantlsng.ktmlsany.top
+  server: okwanjk.ktmlsany.top
   port: 11004
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
   client-fingerprint: chrome
@@ -259,7 +257,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 TW台湾-A2
   type: anytls
-  server: wantlsng.ktmlsany.top
+  server: okwanjk.ktmlsany.top
   port: 11004
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
   client-fingerprint: chrome
@@ -271,7 +269,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇺🇸 USA美国-A1
   type: anytls
-  server: wantlsng.ktmlsany.top
+  server: okwanjk.ktmlsany.top
   port: 11005
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
   client-fingerprint: chrome
@@ -283,7 +281,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇺🇸 USA美国-A2
   type: anytls
-  server: wantlsng.ktmlsany.top
+  server: okwanjk.ktmlsany.top
   port: 11005
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
   client-fingerprint: chrome
@@ -294,7 +292,7 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 - name: 🇯🇵 JP日本-1
-  server: wkqrk.ktmhywan.net
+  server: 7o3lx.wkay.ktmhywan.net
   port: 18385
   udp: true
   skip-cert-verify: true
@@ -302,7 +300,7 @@ proxies:
   type: hysteria2
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
 - name: 🇯🇵 JP日本-2
-  server: wkqrk.ktmhywan.net
+  server: 7o3lx.wkay.ktmhywan.net
   port: 18385
   udp: true
   skip-cert-verify: true
@@ -310,7 +308,7 @@ proxies:
   type: hysteria2
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
 - name: 🇸🇬 SG新加坡-1
-  server: o4ogv.ktmhywan.net
+  server: do9n1.lesi.ktmhywan.net
   port: 18383
   udp: true
   skip-cert-verify: true
@@ -318,7 +316,7 @@ proxies:
   type: hysteria2
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
 - name: 🇸🇬 SG新加坡-2
-  server: o4ogv.ktmhywan.net
+  server: do9n1.lesi.ktmhywan.net
   port: 18383
   udp: true
   skip-cert-verify: true
@@ -326,7 +324,7 @@ proxies:
   type: hysteria2
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
 - name: 🇭🇰 HK香港-1-国内官网：ktm01.com
-  server: 8vhm0.ktmhywan.net
+  server: z1k7y.nvsg.ktmhywan.net
   port: 18385
   udp: true
   skip-cert-verify: true
@@ -334,7 +332,7 @@ proxies:
   type: hysteria2
   password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
 - name: 🇭🇰 HK香港-2
-  server: 8vhm0.ktmhywan.net
+  server: z1k7y.nvsg.ktmhywan.net
   port: 18385
   udp: true
   skip-cert-verify: true
@@ -538,8 +536,8 @@ proxy-groups:
   type: select
   proxies:
   - 自动选择
-  - 剩余流量：475.47 GB
-  - 距离下次重置剩余：9 天
+  - 剩余流量：460.21 GB
+  - 距离下次重置剩余：8 天
   - 套餐到期：2027-01-26
   - 🇭🇰 HK香港-A1
   - 🇭🇰 HK香港-A2
@@ -576,49 +574,17 @@ proxy-groups:
   - 🇨🇳 TW台湾-01
   - 🇨🇳 TW台湾-02
 - name: 自动选择
-  type: select
+  type: fallback
+  tolerance: 0
+  url: https://www.gstatic.com/generate_204
+  interval: 180
   proxies:
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
-  - 剩余流量：475.47 GB
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇺🇸 USA美国-A1
-  - 🇺🇸 USA美国-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇰🇷 KR韩国-1
-  - 🇰🇷 KR韩国-2
-  - 🇲🇾 MY马来西亚-1
-  - 🇲🇾 MY马来西亚-2
-  - 🇺🇸 USA美国-1
-  - 🇺🇸 USA美国-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇺🇸 USA美国-01
-  - 🇺🇸 USA美国-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
-  url: http://www.YouTube.com
-  interval: 600
-  tolerance: 20
+  - 香港自动
+  - 全球自动
+  lazy: false
 - name: ChatGPT
   type: fallback
-  proxies: &id001
+  proxies:
   - 🇸🇬 SG新加坡-02
   - 🇸🇬 SG新加坡-A1
   - 🇸🇬 SG新加坡-A2
@@ -631,7 +597,13 @@ proxy-groups:
   lazy: false
 - name: Gemini
   type: fallback
-  proxies: *id001
+  proxies:
+  - 🇸🇬 SG新加坡-02
+  - 🇸🇬 SG新加坡-A1
+  - 🇸🇬 SG新加坡-A2
+  - 🇸🇬 SG新加坡-1
+  - 🇸🇬 SG新加坡-2
+  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
   url: https://chatgpt.com/cdn-cgi/trace
   interval: 300
   tolerance: 99999
@@ -640,7 +612,7 @@ proxy-groups:
   type: select
   proxies:
   - 节点选择
-  - 距离下次重置剩余：9 天
+  - 距离下次重置剩余：8 天
   - 🇭🇰 HK香港-A1
   - 🇭🇰 HK香港-A2
   - 🇯🇵 JP日本-A1
@@ -684,7 +656,7 @@ proxy-groups:
   proxies:
   - DIRECT
   - 节点选择
-  - 距离下次重置剩余：9 天
+  - 距离下次重置剩余：8 天
   - 🇭🇰 HK香港-A1
   - 🇭🇰 HK香港-A2
   - 🇯🇵 JP日本-A1
@@ -724,7 +696,7 @@ proxy-groups:
   proxies:
   - DIRECT
   - 节点选择
-  - 距离下次重置剩余：9 天
+  - 距离下次重置剩余：8 天
   - 🇭🇰 HK香港-A1
   - 🇭🇰 HK香港-A2
   - 🇯🇵 JP日本-A1
@@ -788,37 +760,18 @@ proxy-groups:
   - 🇨🇳 TW台湾-01
   - 🇨🇳 TW台湾-02
 - name: TikTok
-  type: select
+  type: fallback
   proxies:
-  - 距离下次重置剩余：9 天
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
+  - 🇸🇬 SG新加坡-02
   - 🇸🇬 SG新加坡-A1
   - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇺🇸 USA美国-A1
-  - 🇺🇸 USA美国-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
   - 🇸🇬 SG新加坡-1
   - 🇸🇬 SG新加坡-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇰🇷 KR韩国-1
-  - 🇰🇷 KR韩国-2
-  - 🇲🇾 MY马来西亚-1
-  - 🇲🇾 MY马来西亚-2
-  - 🇺🇸 USA美国-1
-  - 🇺🇸 USA美国-2
   - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇺🇸 USA美国-01
-  - 🇺🇸 USA美国-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
+  url: https://chatgpt.com/cdn-cgi/trace
+  interval: 300
+  tolerance: 99999
+  lazy: false
 - name: Twitter
   type: select
   proxies:
@@ -886,7 +839,7 @@ proxy-groups:
   proxies:
   - 节点选择
   - DIRECT
-  - 距离下次重置剩余：9 天
+  - 距离下次重置剩余：8 天
   - 🇭🇰 HK香港-A1
   - 🇭🇰 HK香港-A2
   - 🇯🇵 JP日本-A1
@@ -926,7 +879,7 @@ proxy-groups:
   proxies:
   - DIRECT
   - 节点选择
-  - 距离下次重置剩余：9 天
+  - 距离下次重置剩余：8 天
   - 🇭🇰 HK香港-A1
   - 🇭🇰 HK香港-A2
   - 🇯🇵 JP日本-A1
@@ -966,7 +919,7 @@ proxy-groups:
   proxies:
   - DIRECT
   - 节点选择
-  - 距离下次重置剩余：9 天
+  - 距离下次重置剩余：8 天
   - 🇭🇰 HK香港-A1
   - 🇭🇰 HK香港-A2
   - 🇯🇵 JP日本-A1
@@ -1005,7 +958,7 @@ proxy-groups:
   type: select
   proxies:
   - 节点选择
-  - 距离下次重置剩余：9 天
+  - 距离下次重置剩余：8 天
   - 🇭🇰 HK香港-A1
   - 🇭🇰 HK香港-A2
   - 🇯🇵 JP日本-A1
@@ -1045,7 +998,7 @@ proxy-groups:
   proxies:
   - 节点选择
   - DIRECT
-  - 距离下次重置剩余：9 天
+  - 距离下次重置剩余：8 天
   - 🇭🇰 HK香港-A1
   - 🇭🇰 HK香港-A2
   - 🇯🇵 JP日本-A1
@@ -1080,6 +1033,60 @@ proxy-groups:
   - 🇺🇸 USA美国-02
   - 🇨🇳 TW台湾-01
   - 🇨🇳 TW台湾-02
+- name: 香港自动
+  type: url-test
+  proxies:
+  - 🇭🇰 HK香港-A1
+  - 🇭🇰 HK香港-A2
+  - 🇭🇰 HK香港-1-国内官网：ktm01.com
+  - 🇭🇰 HK香港-2
+  - 🇭🇰 HK香港-01
+  - 🇭🇰 HK香港-02
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  tolerance: 50
+  lazy: false
+- name: 全球自动
+  type: url-test
+  proxies:
+  - 🇭🇰 HK香港-A1
+  - 🇭🇰 HK香港-A2
+  - 🇭🇰 HK香港-1-国内官网：ktm01.com
+  - 🇭🇰 HK香港-2
+  - 🇭🇰 HK香港-01
+  - 🇭🇰 HK香港-02
+  - 🇯🇵 JP日本-A1
+  - 🇯🇵 JP日本-A2
+  - 🇸🇬 SG新加坡-A1
+  - 🇸🇬 SG新加坡-A2
+  - 🇹🇼 TW台湾-A1
+  - 🇹🇼 TW台湾-A2
+  - 🇺🇸 USA美国-A1
+  - 🇺🇸 USA美国-A2
+  - 🇯🇵 JP日本-1
+  - 🇯🇵 JP日本-2
+  - 🇸🇬 SG新加坡-1
+  - 🇸🇬 SG新加坡-2
+  - 🇹🇼 TW台湾-1
+  - 🇹🇼 TW台湾-2
+  - 🇰🇷 KR韩国-1
+  - 🇰🇷 KR韩国-2
+  - 🇲🇾 MY马来西亚-1
+  - 🇲🇾 MY马来西亚-2
+  - 🇺🇸 USA美国-1
+  - 🇺🇸 USA美国-2
+  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
+  - 🇸🇬 SG新加坡-02
+  - 🇯🇵 JP日本-01
+  - 🇯🇵 JP日本-02
+  - 🇺🇸 USA美国-01
+  - 🇺🇸 USA美国-02
+  - 🇨🇳 TW台湾-01
+  - 🇨🇳 TW台湾-02
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  tolerance: 50
+  lazy: false
 rules:
 - DOMAIN-KEYWORD,mojie,自动选择
 - GEOIP,lan,DIRECT,no-resolve
