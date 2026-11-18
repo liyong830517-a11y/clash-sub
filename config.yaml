@@ -1,4 +1,3 @@
-# KTM Cloud 手机 Clash Meta 配置（照抄电脑 Clash Verge 当前生效的分流规则与策略组）
 mode: rule
 allow-lan: false
 log-level: info
@@ -134,955 +133,177 @@ dns:
   - https://doh.pub/dns-query
   fallback-filter:
     geoip: false
-proxies:
-- name: 剩余流量：460.21 GB
-  type: anytls
-  server: okwanjk.ktmlsany.top
-  port: 11001
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  client-fingerprint: chrome
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 距离下次重置剩余：8 天
-  type: anytls
-  server: okwanjk.ktmlsany.top
-  port: 11001
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  client-fingerprint: chrome
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 套餐到期：2027-01-26
-  type: anytls
-  server: okwanjk.ktmlsany.top
-  port: 11001
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  client-fingerprint: chrome
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰 HK香港-A1
-  type: anytls
-  server: okwanjk.ktmlsany.top
-  port: 11001
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  client-fingerprint: chrome
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰 HK香港-A2
-  type: anytls
-  server: okwanjk.ktmlsany.top
-  port: 11001
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  client-fingerprint: chrome
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 JP日本-A1
-  type: anytls
-  server: okwanjk.ktmlsany.top
-  port: 11002
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  client-fingerprint: chrome
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 JP日本-A2
-  type: anytls
-  server: okwanjk.ktmlsany.top
-  port: 11002
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  client-fingerprint: chrome
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇸🇬 SG新加坡-A1
-  type: anytls
-  server: okwanjk.ktmlsany.top
-  port: 11003
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  client-fingerprint: chrome
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇸🇬 SG新加坡-A2
-  type: anytls
-  server: okwanjk.ktmlsany.top
-  port: 11003
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  client-fingerprint: chrome
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇹🇼 TW台湾-A1
-  type: anytls
-  server: okwanjk.ktmlsany.top
-  port: 11004
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  client-fingerprint: chrome
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇹🇼 TW台湾-A2
-  type: anytls
-  server: okwanjk.ktmlsany.top
-  port: 11004
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  client-fingerprint: chrome
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸 USA美国-A1
-  type: anytls
-  server: okwanjk.ktmlsany.top
-  port: 11005
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  client-fingerprint: chrome
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸 USA美国-A2
-  type: anytls
-  server: okwanjk.ktmlsany.top
-  port: 11005
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  client-fingerprint: chrome
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 JP日本-1
-  server: 7o3lx.wkay.ktmhywan.net
-  port: 18385
-  udp: true
-  skip-cert-verify: true
-  sni: jp1.ktmhyld.com
-  type: hysteria2
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-- name: 🇯🇵 JP日本-2
-  server: 7o3lx.wkay.ktmhywan.net
-  port: 18385
-  udp: true
-  skip-cert-verify: true
-  sni: jp1.ktmhyld.com
-  type: hysteria2
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-- name: 🇸🇬 SG新加坡-1
-  server: do9n1.lesi.ktmhywan.net
-  port: 18383
-  udp: true
-  skip-cert-verify: true
-  sni: aysg1.ktmhyld.com
-  type: hysteria2
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-- name: 🇸🇬 SG新加坡-2
-  server: do9n1.lesi.ktmhywan.net
-  port: 18383
-  udp: true
-  skip-cert-verify: true
-  sni: aysg1.ktmhyld.com
-  type: hysteria2
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-- name: 🇭🇰 HK香港-1-国内官网：ktm01.com
-  server: z1k7y.nvsg.ktmhywan.net
-  port: 18385
-  udp: true
-  skip-cert-verify: true
-  sni: ahyhk.ktmhyld.com
-  type: hysteria2
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-- name: 🇭🇰 HK香港-2
-  server: z1k7y.nvsg.ktmhywan.net
-  port: 18385
-  udp: true
-  skip-cert-verify: true
-  sni: ahyhk.ktmhyld.com
-  type: hysteria2
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-- name: 🇹🇼 TW台湾-1
-  server: hy2tw.ktmhytw1.top
-  port: 18386
-  udp: true
-  skip-cert-verify: true
-  sni: tw2.ktmhyld.com
-  type: hysteria2
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-- name: 🇹🇼 TW台湾-2
-  server: hy2tw.ktmhytw1.top
-  port: 18386
-  udp: true
-  skip-cert-verify: true
-  sni: tw2.ktmhyld.com
-  type: hysteria2
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-- name: 🇰🇷 KR韩国-1
-  server: akrkr1.ktmhyld.com
-  port: 18385
-  udp: true
-  skip-cert-verify: true
-  sni: kr1.ktmhyld.com
-  type: hysteria2
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-- name: 🇰🇷 KR韩国-2
-  server: akrkr1.ktmhyld.com
-  port: 18385
-  udp: true
-  skip-cert-verify: true
-  sni: kr2.ktmhyld.com
-  type: hysteria2
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-- name: 🇲🇾 MY马来西亚-1
-  server: hymy1.ktmhyld.com
-  port: 18385
-  udp: true
-  skip-cert-verify: true
-  sni: my1.ktmhyld.com
-  type: hysteria2
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-- name: 🇲🇾 MY马来西亚-2
-  server: hymy1.ktmhyld.com
-  port: 18385
-  udp: true
-  skip-cert-verify: true
-  sni: my1.ktmhyld.com
-  type: hysteria2
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-- name: 🇺🇸 USA美国-1
-  server: abus1.ktmhyld.com
-  port: 18387
-  udp: true
-  skip-cert-verify: true
-  type: hysteria2
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-- name: 🇺🇸 USA美国-2
-  server: abus1.ktmhyld.com
-  port: 18387
-  udp: true
-  skip-cert-verify: true
-  type: hysteria2
-  password: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-- name: 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  type: vmess
-  server: gtm1.ktmwan.net
-  port: 12901
-  uuid: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-- name: 🇸🇬 SG新加坡-02
-  type: vmess
-  server: gtm1.ktmwan.net
-  port: 12901
-  uuid: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-- name: 🇭🇰 HK香港-01
-  type: vmess
-  server: gtm1.ktmwan.net
-  port: 12890
-  uuid: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-- name: 🇭🇰 HK香港-02
-  type: vmess
-  server: gtm1.ktmwan.net
-  port: 12890
-  uuid: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-- name: 🇯🇵 JP日本-01
-  type: vmess
-  server: gtm1.ktmwan.net
-  port: 12883
-  uuid: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-- name: 🇯🇵 JP日本-02
-  type: vmess
-  server: gtm1.ktmwan.net
-  port: 12883
-  uuid: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-- name: 🇺🇸 USA美国-01
-  type: vmess
-  server: gtm1.ktmwan.net
-  port: 12885
-  uuid: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-- name: 🇺🇸 USA美国-02
-  type: vmess
-  server: gtm1.ktmwan.net
-  port: 12885
-  uuid: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-- name: 🇨🇳 TW台湾-01
-  type: vmess
-  server: gtm1.ktmwan.net
-  port: 12888
-  uuid: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-- name: 🇨🇳 TW台湾-02
-  type: vmess
-  server: gtm1.ktmwan.net
-  port: 12888
-  uuid: 17a1da7c-bc8e-42ee-bf28-4c1f17170865
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
+proxy-providers:
+  ktm:
+    type: http
+    url: https://23.156.152.79:63888/api/v1/client/subscribe?token=e75fe814b2aca3804f84b2411f5b753d&flag=clashmeta
+    path: ./proxy_provider/ktm.yaml
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      timeout: 5000
+      lazy: true
+    exclude-filter: 剩余流量|距离下次重置|套餐到期|到期|重置
 proxy-groups:
 - name: 节点选择
   type: select
+  use:
+  - ktm
   proxies:
   - 自动选择
-  - 剩余流量：460.21 GB
-  - 距离下次重置剩余：8 天
-  - 套餐到期：2027-01-26
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇺🇸 USA美国-A1
-  - 🇺🇸 USA美国-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇰🇷 KR韩国-1
-  - 🇰🇷 KR韩国-2
-  - 🇲🇾 MY马来西亚-1
-  - 🇲🇾 MY马来西亚-2
-  - 🇺🇸 USA美国-1
-  - 🇺🇸 USA美国-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇺🇸 USA美国-01
-  - 🇺🇸 USA美国-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰|新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬|日本|japan|(?<![A-Za-z])jp(?![A-Za-z])|🇯🇵|台湾|taiwan|(?<![A-Za-z])tw(?![A-Za-z])|🇹🇼|韩国|korea|(?<![A-Za-z])kr(?![A-Za-z])|🇰🇷|马来西亚|malaysia|(?<![A-Za-z])my(?![A-Za-z])|🇲🇾|美国|united
+    ?states|(?<![A-Za-z])usa?(?![A-Za-z])|🇺🇸
 - name: 自动选择
   type: fallback
-  tolerance: 0
   url: https://www.gstatic.com/generate_204
   interval: 180
+  tolerance: 99999
+  lazy: false
   proxies:
   - 香港自动
   - 全球自动
-  lazy: false
 - name: ChatGPT
   type: fallback
-  proxies:
-  - 🇸🇬 SG新加坡-02
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
   url: https://chatgpt.com/cdn-cgi/trace
   interval: 300
   tolerance: 99999
   lazy: false
+  use:
+  - ktm
+  filter: 新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬
 - name: Gemini
   type: fallback
-  proxies:
-  - 🇸🇬 SG新加坡-02
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
   url: https://chatgpt.com/cdn-cgi/trace
   interval: 300
   tolerance: 99999
   lazy: false
+  use:
+  - ktm
+  filter: 新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬
 - name: Netflix
   type: select
+  use:
+  - ktm
   proxies:
   - 节点选择
-  - 距离下次重置剩余：8 天
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇺🇸 USA美国-A1
-  - 🇺🇸 USA美国-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇰🇷 KR韩国-1
-  - 🇰🇷 KR韩国-2
-  - 🇲🇾 MY马来西亚-1
-  - 🇲🇾 MY马来西亚-2
-  - 🇺🇸 USA美国-1
-  - 🇺🇸 USA美国-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇺🇸 USA美国-01
-  - 🇺🇸 USA美国-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰|新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬|日本|japan|(?<![A-Za-z])jp(?![A-Za-z])|🇯🇵|台湾|taiwan|(?<![A-Za-z])tw(?![A-Za-z])|🇹🇼|韩国|korea|(?<![A-Za-z])kr(?![A-Za-z])|🇰🇷|马来西亚|malaysia|(?<![A-Za-z])my(?![A-Za-z])|🇲🇾|美国|united
+    ?states|(?<![A-Za-z])usa?(?![A-Za-z])|🇺🇸
 - name: 磁力下载
   type: select
   proxies:
   - DIRECT
 - name: 哔哩哔哩
   type: select
+  use:
+  - ktm
   proxies:
   - DIRECT
   - 节点选择
-  - 距离下次重置剩余：8 天
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇺🇸 USA美国-A1
-  - 🇺🇸 USA美国-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇰🇷 KR韩国-1
-  - 🇰🇷 KR韩国-2
-  - 🇲🇾 MY马来西亚-1
-  - 🇲🇾 MY马来西亚-2
-  - 🇺🇸 USA美国-1
-  - 🇺🇸 USA美国-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇺🇸 USA美国-01
-  - 🇺🇸 USA美国-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰|新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬|日本|japan|(?<![A-Za-z])jp(?![A-Za-z])|🇯🇵|台湾|taiwan|(?<![A-Za-z])tw(?![A-Za-z])|🇹🇼|韩国|korea|(?<![A-Za-z])kr(?![A-Za-z])|🇰🇷|马来西亚|malaysia|(?<![A-Za-z])my(?![A-Za-z])|🇲🇾|美国|united
+    ?states|(?<![A-Za-z])usa?(?![A-Za-z])|🇺🇸
 - name: 抖音
   type: select
+  use:
+  - ktm
   proxies:
   - DIRECT
   - 节点选择
-  - 距离下次重置剩余：8 天
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇺🇸 USA美国-A1
-  - 🇺🇸 USA美国-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇰🇷 KR韩国-1
-  - 🇰🇷 KR韩国-2
-  - 🇲🇾 MY马来西亚-1
-  - 🇲🇾 MY马来西亚-2
-  - 🇺🇸 USA美国-1
-  - 🇺🇸 USA美国-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇺🇸 USA美国-01
-  - 🇺🇸 USA美国-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰|新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬|日本|japan|(?<![A-Za-z])jp(?![A-Za-z])|🇯🇵|台湾|taiwan|(?<![A-Za-z])tw(?![A-Za-z])|🇹🇼|韩国|korea|(?<![A-Za-z])kr(?![A-Za-z])|🇰🇷|马来西亚|malaysia|(?<![A-Za-z])my(?![A-Za-z])|🇲🇾|美国|united
+    ?states|(?<![A-Za-z])usa?(?![A-Za-z])|🇺🇸
 - name: Telegram
   type: select
+  use:
+  - ktm
   proxies:
   - 节点选择
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰|新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬|日本|japan|(?<![A-Za-z])jp(?![A-Za-z])|🇯🇵|台湾|taiwan|(?<![A-Za-z])tw(?![A-Za-z])|🇹🇼|韩国|korea|(?<![A-Za-z])kr(?![A-Za-z])|🇰🇷|马来西亚|malaysia|(?<![A-Za-z])my(?![A-Za-z])|🇲🇾|美国|united
+    ?states|(?<![A-Za-z])usa?(?![A-Za-z])|🇺🇸
 - name: TikTok
   type: fallback
-  proxies:
-  - 🇸🇬 SG新加坡-02
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
   url: https://chatgpt.com/cdn-cgi/trace
   interval: 300
   tolerance: 99999
   lazy: false
+  use:
+  - ktm
+  filter: 新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬
 - name: Twitter
   type: select
+  use:
+  - ktm
   proxies:
   - 节点选择
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰|新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬|日本|japan|(?<![A-Za-z])jp(?![A-Za-z])|🇯🇵|台湾|taiwan|(?<![A-Za-z])tw(?![A-Za-z])|🇹🇼|韩国|korea|(?<![A-Za-z])kr(?![A-Za-z])|🇰🇷|马来西亚|malaysia|(?<![A-Za-z])my(?![A-Za-z])|🇲🇾|美国|united
+    ?states|(?<![A-Za-z])usa?(?![A-Za-z])|🇺🇸
 - name: WhatsApp
   type: select
+  use:
+  - ktm
   proxies:
   - 节点选择
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇺🇸 USA美国-A1
-  - 🇺🇸 USA美国-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇺🇸 USA美国-1
-  - 🇺🇸 USA美国-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇺🇸 USA美国-01
-  - 🇺🇸 USA美国-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰|新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬|日本|japan|(?<![A-Za-z])jp(?![A-Za-z])|🇯🇵|台湾|taiwan|(?<![A-Za-z])tw(?![A-Za-z])|🇹🇼|韩国|korea|(?<![A-Za-z])kr(?![A-Za-z])|🇰🇷|马来西亚|malaysia|(?<![A-Za-z])my(?![A-Za-z])|🇲🇾|美国|united
+    ?states|(?<![A-Za-z])usa?(?![A-Za-z])|🇺🇸
 - name: Copilot
   type: select
+  use:
+  - ktm
   proxies:
-  - 节点选择
   - DIRECT
-  - 距离下次重置剩余：8 天
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇺🇸 USA美国-A1
-  - 🇺🇸 USA美国-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇰🇷 KR韩国-1
-  - 🇰🇷 KR韩国-2
-  - 🇲🇾 MY马来西亚-1
-  - 🇲🇾 MY马来西亚-2
-  - 🇺🇸 USA美国-1
-  - 🇺🇸 USA美国-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇺🇸 USA美国-01
-  - 🇺🇸 USA美国-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
+  - 节点选择
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰|新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬|日本|japan|(?<![A-Za-z])jp(?![A-Za-z])|🇯🇵|台湾|taiwan|(?<![A-Za-z])tw(?![A-Za-z])|🇹🇼|韩国|korea|(?<![A-Za-z])kr(?![A-Za-z])|🇰🇷|马来西亚|malaysia|(?<![A-Za-z])my(?![A-Za-z])|🇲🇾|美国|united
+    ?states|(?<![A-Za-z])usa?(?![A-Za-z])|🇺🇸
 - name: 微软服务
   type: select
+  use:
+  - ktm
   proxies:
   - DIRECT
   - 节点选择
-  - 距离下次重置剩余：8 天
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇺🇸 USA美国-A1
-  - 🇺🇸 USA美国-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇰🇷 KR韩国-1
-  - 🇰🇷 KR韩国-2
-  - 🇲🇾 MY马来西亚-1
-  - 🇲🇾 MY马来西亚-2
-  - 🇺🇸 USA美国-1
-  - 🇺🇸 USA美国-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇺🇸 USA美国-01
-  - 🇺🇸 USA美国-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰|新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬|日本|japan|(?<![A-Za-z])jp(?![A-Za-z])|🇯🇵|台湾|taiwan|(?<![A-Za-z])tw(?![A-Za-z])|🇹🇼|韩国|korea|(?<![A-Za-z])kr(?![A-Za-z])|🇰🇷|马来西亚|malaysia|(?<![A-Za-z])my(?![A-Za-z])|🇲🇾|美国|united
+    ?states|(?<![A-Za-z])usa?(?![A-Za-z])|🇺🇸
 - name: 苹果服务
   type: select
+  use:
+  - ktm
   proxies:
   - DIRECT
   - 节点选择
-  - 距离下次重置剩余：8 天
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇺🇸 USA美国-A1
-  - 🇺🇸 USA美国-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇰🇷 KR韩国-1
-  - 🇰🇷 KR韩国-2
-  - 🇲🇾 MY马来西亚-1
-  - 🇲🇾 MY马来西亚-2
-  - 🇺🇸 USA美国-1
-  - 🇺🇸 USA美国-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇺🇸 USA美国-01
-  - 🇺🇸 USA美国-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰|新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬|日本|japan|(?<![A-Za-z])jp(?![A-Za-z])|🇯🇵|台湾|taiwan|(?<![A-Za-z])tw(?![A-Za-z])|🇹🇼|韩国|korea|(?<![A-Za-z])kr(?![A-Za-z])|🇰🇷|马来西亚|malaysia|(?<![A-Za-z])my(?![A-Za-z])|🇲🇾|美国|united
+    ?states|(?<![A-Za-z])usa?(?![A-Za-z])|🇺🇸
 - name: 谷歌服务
   type: select
+  use:
+  - ktm
   proxies:
   - 节点选择
-  - 距离下次重置剩余：8 天
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇺🇸 USA美国-A1
-  - 🇺🇸 USA美国-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇰🇷 KR韩国-1
-  - 🇰🇷 KR韩国-2
-  - 🇲🇾 MY马来西亚-1
-  - 🇲🇾 MY马来西亚-2
-  - 🇺🇸 USA美国-1
-  - 🇺🇸 USA美国-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇺🇸 USA美国-01
-  - 🇺🇸 USA美国-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰|新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬|日本|japan|(?<![A-Za-z])jp(?![A-Za-z])|🇯🇵|台湾|taiwan|(?<![A-Za-z])tw(?![A-Za-z])|🇹🇼|韩国|korea|(?<![A-Za-z])kr(?![A-Za-z])|🇰🇷|马来西亚|malaysia|(?<![A-Za-z])my(?![A-Za-z])|🇲🇾|美国|united
+    ?states|(?<![A-Za-z])usa?(?![A-Za-z])|🇺🇸
 - name: Steam
   type: select
+  use:
+  - ktm
   proxies:
-  - 节点选择
   - DIRECT
-  - 距离下次重置剩余：8 天
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇺🇸 USA美国-A1
-  - 🇺🇸 USA美国-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇰🇷 KR韩国-1
-  - 🇰🇷 KR韩国-2
-  - 🇲🇾 MY马来西亚-1
-  - 🇲🇾 MY马来西亚-2
-  - 🇺🇸 USA美国-1
-  - 🇺🇸 USA美国-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇺🇸 USA美国-01
-  - 🇺🇸 USA美国-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
+  - 节点选择
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰|新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬|日本|japan|(?<![A-Za-z])jp(?![A-Za-z])|🇯🇵|台湾|taiwan|(?<![A-Za-z])tw(?![A-Za-z])|🇹🇼|韩国|korea|(?<![A-Za-z])kr(?![A-Za-z])|🇰🇷|马来西亚|malaysia|(?<![A-Za-z])my(?![A-Za-z])|🇲🇾|美国|united
+    ?states|(?<![A-Za-z])usa?(?![A-Za-z])|🇺🇸
 - name: 香港自动
   type: url-test
-  proxies:
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
+  use:
+  - ktm
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰
   url: https://www.gstatic.com/generate_204
   interval: 180
   tolerance: 50
   lazy: false
 - name: 全球自动
   type: url-test
-  proxies:
-  - 🇭🇰 HK香港-A1
-  - 🇭🇰 HK香港-A2
-  - 🇭🇰 HK香港-1-国内官网：ktm01.com
-  - 🇭🇰 HK香港-2
-  - 🇭🇰 HK香港-01
-  - 🇭🇰 HK香港-02
-  - 🇯🇵 JP日本-A1
-  - 🇯🇵 JP日本-A2
-  - 🇸🇬 SG新加坡-A1
-  - 🇸🇬 SG新加坡-A2
-  - 🇹🇼 TW台湾-A1
-  - 🇹🇼 TW台湾-A2
-  - 🇺🇸 USA美国-A1
-  - 🇺🇸 USA美国-A2
-  - 🇯🇵 JP日本-1
-  - 🇯🇵 JP日本-2
-  - 🇸🇬 SG新加坡-1
-  - 🇸🇬 SG新加坡-2
-  - 🇹🇼 TW台湾-1
-  - 🇹🇼 TW台湾-2
-  - 🇰🇷 KR韩国-1
-  - 🇰🇷 KR韩国-2
-  - 🇲🇾 MY马来西亚-1
-  - 🇲🇾 MY马来西亚-2
-  - 🇺🇸 USA美国-1
-  - 🇺🇸 USA美国-2
-  - 🇸🇬 SG新加坡-01-国内官网：ktm.ooo
-  - 🇸🇬 SG新加坡-02
-  - 🇯🇵 JP日本-01
-  - 🇯🇵 JP日本-02
-  - 🇺🇸 USA美国-01
-  - 🇺🇸 USA美国-02
-  - 🇨🇳 TW台湾-01
-  - 🇨🇳 TW台湾-02
+  use:
+  - ktm
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰|新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬|日本|japan|(?<![A-Za-z])jp(?![A-Za-z])|🇯🇵|台湾|taiwan|(?<![A-Za-z])tw(?![A-Za-z])|🇹🇼|韩国|korea|(?<![A-Za-z])kr(?![A-Za-z])|🇰🇷|马来西亚|malaysia|(?<![A-Za-z])my(?![A-Za-z])|🇲🇾|美国|united
+    ?states|(?<![A-Za-z])usa?(?![A-Za-z])|🇺🇸
   url: https://www.gstatic.com/generate_204
   interval: 180
   tolerance: 50
