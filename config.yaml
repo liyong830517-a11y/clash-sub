@@ -308,9 +308,22 @@ proxy-groups:
   interval: 180
   tolerance: 50
   lazy: false
+- name: YouTube
+  type: url-test
+  use:
+  - ktm
+  filter: 香港|hong ?kong|(?<![A-Za-z])hk(?![A-Za-z])|🇭🇰|新加坡|singapore|(?<![A-Za-z])sg(?![A-Za-z])|🇸🇬|日本|japan|(?<![A-Za-z])jp(?![A-Za-z])|🇯🇵|台湾|taiwan|(?<![A-Za-z])tw(?![A-Za-z])|🇹🇼|韩国|korea|(?<![A-Za-z])kr(?![A-Za-z])|🇰🇷|马来西亚|malaysia|(?<![A-Za-z])my(?![A-Za-z])|🇲🇾|美国|united ?states|(?<![A-Za-z])usa?(?![A-Za-z])|🇺🇸
+  url: https://www.youtube.com/generate_204
+  interval: 60
+  tolerance: 50
+  lazy: false
 rules:
 - DOMAIN-KEYWORD,mojie,自动选择
 - GEOIP,lan,DIRECT,no-resolve
+- DOMAIN-KEYWORD,youtube,YouTube
+- DOMAIN-KEYWORD,googlevideo,YouTube
+- DOMAIN-KEYWORD,ytimg,YouTube
+- DOMAIN-KEYWORD,ggpht,YouTube
 - DOMAIN-SUFFIX,zoot.plus,DIRECT
 - DOMAIN-SUFFIX,prts.plus,DIRECT
 - DOMAIN,ai.google.dev,Gemini
