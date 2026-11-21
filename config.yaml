@@ -316,7 +316,7 @@ proxy-groups:
   url: https://www.youtube.com/generate_204
   interval: 60
   tolerance: 50
-  lazy: false
+  lazy: true
 rules:
 - DOMAIN-KEYWORD,mojie,自动选择
 - GEOIP,lan,DIRECT,no-resolve
